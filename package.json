@@ -44,7 +44,7 @@
   "dependencies": {
     "ci-info": "^2.0.0",
     "configstore": "^5.0.0",
-    "execa": "3.3.0",
+    "execa": "3.4.0",
     "import-lazy": "^4.0.0",
     "semver": "^6.3.0"
   },
