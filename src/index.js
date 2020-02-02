@@ -20,16 +20,17 @@ const updateNotify = function(options = {}) {
   if (!lastUpdateCheck && !latestCachedVersion && !updateAvailable)
     notifyFlow(options); // 1st Run
   if (!shouldCheckUpdates(lastUpdateCheck, updateCheckInterval)) return;
-  if (!semverCheck(options.pkg.version, latestCachedVersion)) return;
-
-  notifyFlow(options);
-  if (updateAvailable) {
-    return {
-      updateAvailable: updateAvailable,
-      name: options.pkg.name,
-      latest: latestCachedVersion,
-      current: options.pkg.version
-    };
+  if (semverCheck(options.pkg.version, latestCachedVersion)) {
+    if (updateAvailable) {
+      return {
+        updateAvailable: updateAvailable,
+        name: options.pkg.name,
+        latest: latestCachedVersion,
+        current: options.pkg.version
+      };
+    }
+  } else {
+    notifyFlow(options);
   }
 };
 
