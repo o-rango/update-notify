@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/o-rango/update-notify/compare/v0.1.1...v0.1.2) (2020-02-03)
+
+
+### Bug Fixes
+
+* error in update validation ([a36b017](https://github.com/o-rango/update-notify/commit/a36b01708905a6380113bbee9076e00c0dde461b))
+
 ### [0.1.1](https://github.com/o-rango/update-notify/compare/v0.1.0...v0.1.1) (2020-01-22)
 
 
