@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "husky": "4.2.5",
-    "jest": "25.3.0",
+    "jest": "25.5.4",
     "lint-staged": "10.0.5",
     "prettier": "2.0.2",
     "standard-version": "7.1.0"
